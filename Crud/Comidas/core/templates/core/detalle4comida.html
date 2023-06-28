@@ -1,0 +1,31 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+
+<main>
+    {% load static %}
+    <div class="container">
+        <center>
+            <div class="card mb-3" style="width: 800px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'img/comidas/posole.png' %}"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title"><br><br>Pozole</h5><br>
+                            <p class="card-text">
+                                Menu: Pozole <br>
+                                Descripcion: El pozole es un caldo tradicional mexicano hecho a base de granos de maíz nixtamalizados, comúnmente de la variedad cacahuazintle, al que se agregan carnes, verduras y especias muy variadas según la región. <br>
+                                Precio: $5.600<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+</main>
+
+{% endblock %}

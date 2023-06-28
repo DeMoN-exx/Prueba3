@@ -1,0 +1,31 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+
+<main>
+    {% load static %}
+    <div class="container">
+        <center>
+            <div class="card mb-3" style="width: 800px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'img/locales/Local 2.jpg' %}"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title"><br><br>LOS MI REY</h5><br>
+                            <p class="card-text">
+                                Local:LOS MI REY <br>
+                                Direccion: 880 San Martín  <br>
+                                Santiago, Región Metropolitana <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+</main>
+
+{% endblock %}

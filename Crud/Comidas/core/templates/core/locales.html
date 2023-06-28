@@ -1,0 +1,39 @@
+{% extends 'core/layout.html' %} 
+{% block content %}
+        <main>
+            {% load static %}
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{% static 'img/locales/Local1.png' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Local: LOS MI REY, ubicado en 880 San Martín
+                                    Santiago, Región Metropolitana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{% static 'img/locales/Local 2.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Local: LOS MI REY,ubicado en 701 Tinguiririca
+                                    Las Condes, Región Metropolitana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{% static 'img/locales/Local 3.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Local: LOS MI REY, ubicado en 598 Eyzaguirre
+                                    Santiago, Región Metropolitana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        {% endblock%}

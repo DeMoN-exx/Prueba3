@@ -1,0 +1,55 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+<main>
+    {% load static %}
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: auto;">
+                    <img src="{% static 'img/comidas/Chile-en-Nogada.png' %}"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chiles en Nogal</h5>
+                        <p class="card-text">De puro sabor!.</p>
+                        <a href="{% url 'detalle2comida' %}" class="btn btn-danger">Ver Detalle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: auto;">
+                    <img src="{% static 'img/comidas/receta-tacos-de-carnitas.png' %}"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tacos al Pastor</h5>
+                        <p class="card-text">De puro sabor!.</p>
+                        <a href="{% url 'detalle1comida' %}" class="btn btn-danger">Ver Detalle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: auto;">
+                    <img src="{% static 'img/comidas/comidas\mole-poblano.png' %}"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mole</h5>
+                        <p class="card-text">De puro sabor!.</p>
+                        <a href="{% url 'detalle3comida' %}" class="btn btn-danger">Ver Detalle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card" style="width: auto;">
+                    <img src="{% static 'img/comidas/posole.png' %}"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pozole</h5>
+                        <p class="card-text">De puro sabor!.</p>
+                        <a href="{% url 'detalle4comida' %}" class="btn btn-danger">Ver Detalle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

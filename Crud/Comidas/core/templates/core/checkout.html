@@ -1,0 +1,31 @@
+{% extends 'core/layout.html' %} 
+{% block content %}
+        <main>
+            {% load static %}   
+            <div class="container">
+                <div class="mb-3">
+                    <h4 id="temperatura"></h4>
+                    <h4 id="viento"></h4>
+                    <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="Nombretxt" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Direccion </label>
+                    <input type="text" class="form-control" id="Direcciontxt" placeholder="Direccion">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Numero de Departamento-casa </label>
+                    <input type="text" class="form-control" id="NroDeptonum" placeholder="Numero">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"> Numero de tarjeta</label>
+                    <input type="text" class="form-control" id="NroTarjetanum" placeholder="Numero de tarjeta">
+                </div>
+                <h3>Tu total es de: $44.600<h3>
+                        <div class="contenedor_boton"> <button type="button" class="btn btn-primary" id="btnpagar"
+                                onclick="move()">PAGAR</button> </div>
+                        <br>
+                        <br>
+            </div>
+        </main>
+        {% endblock%}

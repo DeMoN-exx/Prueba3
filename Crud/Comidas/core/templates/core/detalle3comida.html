@@ -1,0 +1,31 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+
+<main>
+    {% load static %}
+    <div class="container">
+        <center>
+            <div class="card mb-3" style="width: 800px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'img/comidas/comidas\mole-poblano.png' %}"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title"><br><br>Mole</h5><br>
+                            <p class="card-text">
+                                Menu: Mole <br>
+                                Descripcion: Los ingredientes del mole varían y en cada casa lo hacen de diferente manera, pero lo que siempre lleva (al menos en Puebla) es: chile ancho, chile mulato, chile pasilla, chipotle, clavo, pimienta gorda, comino, canela, anís, chocolate, cacahuate, almendra, nuez pecana, pepitas, ajonjolí, pasas, jitomate, tomate, ajo y cebolla. Digamos que esta es la base, después cada quien lo muele y sazona a su manera. <br>
+                                Precio: $5.000 <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+</main>
+
+{% endblock %}

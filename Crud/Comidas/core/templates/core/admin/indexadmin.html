@@ -1,0 +1,40 @@
+
+{% extends "core/admin/layoutadmin.html" %}
+
+{% block content %}
+
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Bienvenido {{user.username}}</h1>
+  
+    </div>
+    <center>
+      <caption>
+        <h4>Lista de Menu en la BASE DE DATOS</h4>
+      </caption>
+    </center>
+    <a href="{% url 'save_comida' %}" class="btn btn-danger">Registrar Menu</a>
+    <a href="{% url 'indexadmin' %}" class="btn btn-primary">Volver</a>
+    <table class="table">
+      <tr>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+      </tr>
+      {% for p in comidas %}
+      <tr>
+        <td>{{p.nombre}}</td>
+        <td>{{p.tipo}}</td>
+        <td>{{p.descripcion}}</td>
+        <td>{{p.precio}}</td>
+        <td>
+          <a href="{% url 'mod_comida' g.nombre %}" class="btn btn-primary">Modificar</a>
+          <a href="{% url 'delete_comida' g.nombre %}" class="btn btn-danger">Eliminar</a>
+        </td>
+      </tr>
+      {% endfor%}
+    </table>
+</main>
+
+{% endblock %}

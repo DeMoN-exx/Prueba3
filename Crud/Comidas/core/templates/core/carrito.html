@@ -1,0 +1,111 @@
+{% extends 'core/layout.html' %} 
+{% block content %}
+
+        <main>
+            {% load static %}  
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/comidas/Chile-en-Nogada.png' %}" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chiles en Nogada</h5>
+                                        <p class="card-text">Cantidad: 2</p>
+                                        <p class="card-text">Precio Total: $13.000</p>
+                                        <p class="card-text"><small class="text-body-secondary">Agregado hace 3
+                                                minutos</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/comidas/comidas\mole-poblano.png' %}" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MOLE</h5>
+                                        <p class="card-text">Cantidad: 2</p>
+                                        <p class="card-text">Precio Total: $10.000</p>
+                                        <p class="card-text"><small class="text-body-secondary">Agregado hace 1
+                                                minutos</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/comidas/posole.png' %}" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">POZOLE</h5>
+                                        <p class="card-text">Cantidad: 1</p>
+                                        <p class="card-text">Precio Total: $5.600</p>
+                                        <p class="card-text"><small class="text-body-secondary">Agregado hace 5
+                                                minutos</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/comidas/receta-tacos-de-carnitas.png' %}" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">TACOS DE Carnitas</h5>
+                                        <p class="card-text">Cantidad: 4</p>
+                                        <p class="card-text">Precio Total: $16.000</p>
+                                        <p class="card-text"><small class="text-body-secondary">Agregado hace 5
+                                                minutos</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="contenedor_boton">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    PAGAR
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel"> Checkout</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tu total es de: 44.600
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                
+                                <a href="checkout.html"><button type="button" class="btn btn-primary">Ir a pagar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </main>
+        {% endblock%}

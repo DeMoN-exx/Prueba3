@@ -1,0 +1,31 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+
+<main>
+    {% load static %}
+    <div class="container">
+        <center>
+            <div class="card mb-3" style="width: 800px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'img/comidas/receta-tacos-de-carnitas.png' %}"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title"><br><br>Tacos al pastos</h5><br>
+                            <p class="card-text">
+                                Menu: Tacos al pastos <br>
+                                Descripcion: En México, se le llama carnitas a la carne de cerdo diferentes porciones incluyendo carne que son fritas en manteca de cerdo. Para su preparación se emplean enormes ollas de cobre, o cazos de acero inoxidable.<br>
+                                Precio: $4.000<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'core/layout.html' %}
+
+{% block content %}
+
+<main>
+    {% load static %}
+    <div class="container">
+        <center>
+            <div class="card mb-3" style="width: 800px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="{% static 'img/comidas/Chile-en-Nogada.png' %}"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <h5 class="card-title"><br><br>Chiles en Nogal</h5><br>
+                            <p class="card-text">
+                                Menu:Chiles en Nogales<br>
+                                Descripcion: Consiste en chiles verdes poblanos previamente asados y pelados, rellenos con al menos 20 ingredientes, entre los que destacan la carne de cerdo o res, jitomate, cebolla, almendras, piñones y especias, diversos frutos como manzana, granada y durazno, por mencionar algunos. <br>
+                                Precio: $6.500. <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+</main>
+
+{% endblock %}
